@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bibliothèque</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gestion de la Bibliothèque</h1>
+
+        <!-- Formulaire pour ajouter un livre -->
+        <section class="add-book">
+            <h2>Ajouter un Livre</h2>
+            <form id="addBookForm">
+                <label for="titre">Titre :</label>
+                <input type="text" id="titre" name="titre" required>
+
+                <label for="auteur">Auteur :</label>
+                <input type="text" id="auteur" name="auteur" required>
+
+                <button type="submit" id="insererBtn">Insérer</button>
+            </form>
+        </section>
+
+        <!-- Liste des livres disponibles -->
+        <section class="available-books">
+            <h2>Livres Disponibles</h2>
+            <ul id="booksList"></ul>
+        </section>
+    </div>
+
+    <script src="scripte.js"></script>
+</body>
+</html>
